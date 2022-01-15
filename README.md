@@ -31,15 +31,15 @@ Function Reference:
   Description: prints characters from the `chars` array to the screen
   
   Parameters:
-      chars[] - A character array of any size that will fit the screen, currently no line-wrap
-      startx - The start position on the screen for the x-axis
-      starty - The start position on the screen for the y-axis
-      factor - This is the font size, minimum value is 1
-      rotate - The degrees of rotation, accepted values 0, 90, 180, 270
-      center - If set to 1, text will be centered relative to offsets, xstart and ystart values are ignored
-      coffx  - Amount to offset x-axis from center, ignored when `center` is 0
-      coffy  - Amount to offset y-axis from center, ignored when `center` is 0
-      txtcolor - The color of the text in ILI9341_color_16_t format
+      - chars[] - A character array of any size that will fit the screen, currently no line-wrap
+      - startx - The start position on the screen for the x-axis
+      - starty - The start position on the screen for the y-axis
+      - factor - This is the font size, minimum value is 1
+      - rotate - The degrees of rotation, accepted values 0, 90, 180, 270
+      - center - If set to 1, text will be centered relative to offsets, xstart and ystart values are ignored
+      - coffx  - Amount to offset x-axis from center, ignored when `center` is 0
+      - coffy  - Amount to offset y-axis from center, ignored when `center` is 0
+      - txtcolor - The color of the text in ILI9341_color_16_t format
       
       
   void aip_draw_character_bits(int idx, int x1, int y1, int factor, int rotate, ILI9341_color_16_t txtcolor)
@@ -47,12 +47,12 @@ Function Reference:
   Description: prints a single character to the screen
   
   Parameters:
-      idx   - ASCII code (DEC number) for the character you want to draw to the screen
-      x1    - The starting x-position for the character
-      y1    - The starting y-position for the character
-      factor - The font size, minimum value 1
-      rotate - The degrees of rotation, accepted values 0, 90, 180, 270
-      txtcolor - The color of the text in ILI9341_color_16_t format
+      - idx   - ASCII code (DEC number) for the character you want to draw to the screen
+      - x1    - The starting x-position for the character
+      - y1    - The starting y-position for the character
+      - factor - The font size, minimum value 1
+      - rotate - The degrees of rotation, accepted values 0, 90, 180, 270
+      - txtcolor - The color of the text in ILI9341_color_16_t format
       
 Known Issues:
   - Text positioning - text rotated to 180 or 270 degress is written to the screen in reverse order, the starting position is relative to the last printed character
